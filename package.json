@@ -1,0 +1,24 @@
+{
+  "name": "vite-solid-app-example",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.15.4",
+    "intlayer": "8.0.0-canary.2",
+    "solid-intlayer": "8.0.0-canary.2",
+    "solid-js": "1.9.10"
+  },
+  "devDependencies": {
+    "solid-refresh": "0.7.5",
+    "typescript": "5.9.3",
+    "vite": "7.3.1",
+    "vite-intlayer": "8.0.0-canary.2",
+    "vite-plugin-solid": "2.11.10"
+  }
+}
