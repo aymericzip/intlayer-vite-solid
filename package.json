@@ -12,10 +12,11 @@
     "@solidjs/router": "^0.15.4",
     "intlayer": "latest",
     "intlayer-editor": "latest",
-    "solid-intlayer": "8.0.0-canary.2",
+    "solid-intlayer": "latest",
     "solid-js": "1.9.10"
   },
   "devDependencies": {
+    "@types/node": "^24.10.1",
     "solid-refresh": "0.7.5",
     "typescript": "5.9.3",
     "vite": "7.3.1",
