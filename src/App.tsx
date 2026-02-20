@@ -1,15 +1,15 @@
-import { A, Route, useLocation, useNavigate } from '@solidjs/router';
-import { getLocalizedUrl, localeMap } from 'intlayer';
+import { A, Route, useLocation, useNavigate } from "@solidjs/router";
+import { getLocalizedUrl, localeMap } from "intlayer";
 import {
   IntlayerProvider,
   MarkdownProvider,
   useIntlayer,
   useLocale,
-} from 'solid-intlayer';
-import { createSignal, For, type ParentComponent } from 'solid-js';
-import './App.css';
-import viteLogo from '/vite.svg';
-import solidLogo from './assets/solid.svg';
+} from "solid-intlayer";
+import { createSignal, For, type ParentComponent } from "solid-js";
+import "./App.css";
+import viteLogo from "/vite.svg";
+import solidLogo from "./assets/solid.svg";
 
 const LocaleSwitcher = () => {
   const location = useLocation();
@@ -57,7 +57,7 @@ const Layout: ParentComponent = (props) => {
 
 const Home = () => {
   const [count, setCount] = createSignal(0);
-  const content = useIntlayer('app');
+  const content = useIntlayer("app");
 
   return (
     <>
@@ -90,7 +90,7 @@ const Home = () => {
 };
 
 const Tests = () => {
-  const content = useIntlayer('test');
+  const content = useIntlayer("test");
 
   return (
     <div class="tests">
@@ -117,7 +117,7 @@ export const App = () => (
   <IntlayerProvider>
     {localeMap(({ locale, urlPrefix }) => (
       <Route
-        path={urlPrefix || '/'}
+        path={urlPrefix || "/"}
         component={(props: any) => (
           <IntlayerProvider locale={locale}>
             <MarkdownProvider>
